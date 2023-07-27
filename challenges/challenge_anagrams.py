@@ -14,6 +14,7 @@ def merge_sort_string(s):
     # Merge the sorted halves
     return merge_string(left_half, right_half)
 
+
 def merge_string(left, right):
     merged = []
     left_index, right_index = 0, 0
