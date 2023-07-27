@@ -1,8 +1,12 @@
+def isvalid_time(time):
+    return isinstance(time, int) and 0 <= time < 24
+
+
 def study_schedule(permanence_period, target_time):
     """Faça o código aqui Lutti."""
     number_of_students = 0
 
-    if target_time < 0 or target_time >= 24 or target_time is None:
+    if isvalid_time(target_time) is False:
         return None
 
     for student_session in permanence_period:
